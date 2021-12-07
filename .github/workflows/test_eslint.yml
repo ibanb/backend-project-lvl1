@@ -1,4 +1,4 @@
-name: hello-world
+name: test-eslint
 on: push
 jobs:
   my-job:
