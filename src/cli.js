@@ -6,3 +6,4 @@ function greeting() {
 }
 
 export default greeting;
+//programming is so cool
