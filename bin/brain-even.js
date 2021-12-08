@@ -5,29 +5,25 @@ function getRandomInt(max) {
   }
 
 function even(num) {
-    return (num % 2 === 0) ? true : false;
+    return (num % 2 === 0) ? 'yes' : 'no';
 }
 
 function checkAnswer(ans) {
-    return (ans === "yes") ? true : false;
+    return (ans === "yes") ? 'yes' : 'no';
 }
 
 function gameEven() {
     for (let i = 0; i < 3; i += 1) {
-        const strAns = 'yes';
         const rand = getRandomInt(100);
         console.log(`Question: ${rand}`);
         const answer = inputEvenOddAnswer();
-        if (even(rand) === checkAnswer(answer)) {
-            console.log('Correct!');
-        } 
-        else {
-            if ( checkAnswer(answer) !== true) {
-                strAns = 'no';
+            if (even(rand) === answer) {
+                console.log('Correct!');
+            } 
+            else {
+                return `'${answer}' is wrong answer ;(. Correct answer was '${even(rand)}'.
+                Let's try again, `;
             }
-            return `'${checkAnswer(answer)}' is wrong answer ;(. Correct answer was '${strAns}'.
-            Let's try again, `;
-        }
     }
     return 'Congratulations, ';
 }
