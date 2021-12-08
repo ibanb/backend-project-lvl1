@@ -15,14 +15,13 @@ function gameEven() {
     const rand = getRandomInt(100);
     console.log(`Question: ${rand}`);
     const answer = userAnswer();
-      if (even(rand) === answer) {
-        console.log('Correct!');
-      } 
-      else {
-        return `'${answer}' is wrong answer ;(. Correct answer was '${even(rand)}'. Let's try again, `;
-      }
+    if (even(rand) === answer) {
+      console.log('Correct!');
+    } else {
+      return `'${answer}' is wrong answer ;(. Correct answer was '${even(rand)}'. Let's try again, `;
+    }
   }
-return 'Congratulations, ';
+  return 'Congratulations, ';
 }
 
 const name = greeting();
@@ -31,17 +30,3 @@ const game = gameEven();
 console.log(`${game}${name}!`);
 
 export default gameEven;
- 
-
-
-// Answer "yes" if the number is even, otherwise answer "no".
-// Question: 15
-// Your answer: no
-// Correct!
-// Question: 6
-// Your answer: yes
-// Correct!
-// Question: 7
-// Your answer: no
-// Correct!
-// Congratulations, Sam!
