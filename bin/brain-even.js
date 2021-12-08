@@ -8,10 +8,6 @@ function even(num) {
     return (num % 2 === 0) ? 'yes' : 'no';
 }
 
-function checkAnswer(ans) {
-    return (ans === "yes") ? 'yes' : 'no';
-}
-
 function gameEven() {
     for (let i = 0; i < 3; i += 1) {
         const rand = getRandomInt(100);
