@@ -1,5 +1,8 @@
 #!/usr/bin/env node
-import greeting from '../src/cli.js';
+import {greeting} from '../src/cli.js';
+import gameEven from '../bin/brain-even.js';
 
-console.log('Welcome to the Brain Games!');
-greeting();
+const name = greeting();
+const game = gameEven();
+
+console.log(`${game}${name}!`);
