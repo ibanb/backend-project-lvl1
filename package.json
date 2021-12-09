@@ -22,7 +22,8 @@
     "brain-even": "game/brain-even.js",
     "brain-calc": "game/brain-calc.js",
     "brain-gcd": "game/brain-gcd.js",
-    "brain-progression": "game/brain-progression.js"
+    "brain-progression": "game/brain-progression.js",
+    "brain-prime": "game/brain-prime.js"
   },
   "dependencies": {
     "jest": "^27.4.3",
