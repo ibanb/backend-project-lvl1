@@ -8,7 +8,7 @@ function gameGcd() {
   for (let i = 0; i < 3; i += 1) {
     const num1 = getRandomInt(100);
     const num2 = getRandomInt(100);
-    const expression = `${num1}  ${num2}`;
+    const expression = `${num1} ${num2}`;
     ask(expression);
     const answer = userAnswer();
     const result = gcd(num1, num2);
