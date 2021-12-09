@@ -1,10 +1,11 @@
 #!/usr/bin/env node
-import { userAnswer, greeting, ask, getRandomInt } from '../src/index.js';
+import {
+  userAnswer, greeting, ask, getRandomInt,
+} from '../src/index.js';
 
 function even(num) {
   return (num % 2 === 0) ? 'yes' : 'no';
 }
-
 function gameEven() {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
@@ -22,7 +23,6 @@ function gameEven() {
 
 const name = greeting();
 const game = gameEven();
-
 
 console.log(`${game}${name}!`);
 

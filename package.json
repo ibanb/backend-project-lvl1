@@ -20,7 +20,8 @@
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "game/brain-even.js",
-    "brain-calc": "game/brain-calc.js"
+    "brain-calc": "game/brain-calc.js",
+    "brain-gcd": "game/brain-gcd.js"
   },
   "dependencies": {
     "jest": "^27.4.3",

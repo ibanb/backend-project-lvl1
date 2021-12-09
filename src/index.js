@@ -19,4 +19,13 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-export { greeting, userAnswer, ask, getRandomInt };
+function gcd(a, b) {
+  if (!b) {
+    return a;
+  }
+  return gcd(b, a % b);
+}
+
+export {
+  greeting, userAnswer, ask, getRandomInt, gcd,
+};
