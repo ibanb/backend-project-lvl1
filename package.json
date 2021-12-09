@@ -19,7 +19,8 @@
   "homepage": "https://github.com/ibanb/backend-project-lvl1#readme",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-even": "game/brain-even.js",
+    "brain-calc": "game/brain-calc.js"
   },
   "dependencies": {
     "jest": "^27.4.3",
